@@ -15,7 +15,7 @@ namespace CommandAPI
 
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, Microsoft.AspNetCore.Hosting.IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -23,9 +23,11 @@ namespace CommandAPI
             }
 
           app.UseMvc();
+        
 
 
         
         }
+        
     }
 }
